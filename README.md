@@ -1,8 +1,10 @@
 ## Vend-O-Matic
-Beverage vending machine that being tested via HTTP before being placed into a production environment (believed to be the lobby of a Goodyear Tire franchise).
+Beverage vending machine being tested via HTTP before being placed into a production environment (believed to be the lobby of a Goodyear Tire franchise).
 
 ## Pre-Requisites
-This program is built utilizing Python and Flask, so make sure to install this using:
+This program is built utilizing Python and Flask.
+
+To install Flask via the terminal run:
 
 ```sudo pip install flask```
 
@@ -17,9 +19,9 @@ If you don't have Python installed:
 ## Installation
 In the terminal, clone this repo then `cd` into the directory it creates.
 
-Mac users - Run the command `python app.py`
+Mac users - run `python app.py`
 
-Windows users = run `winpty python.exe app.py`
+Windows users - run `winpty python.exe app.py`
 
 You should see a message to notify you that the Flask service is running:
 ![flask app status](./flask_app.png)
@@ -39,9 +41,9 @@ Examples:
 
 `curl -i -X GET http://127.0.0.1:5000/inventory`
 
-`curl -i -X GET http://127.0.0.1:5000/inventory/<int:inventory-id>`
+`curl -i -X GET http://127.0.0.1:5000/inventory/<int:inventory-id>` (replace <> with integer)
 
-`curl -i -X PUT http://127.0.0.1:5000/inventory/<int:inventory-id>`
+`curl -i -X PUT http://127.0.0.1:5000/inventory/<int:inventory-id>` (replace <> with integer)
 
 VEND AWAY!
 
